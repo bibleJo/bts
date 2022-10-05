@@ -1,0 +1,70 @@
+@media all and (min-width:320px){/*320~767 모바일*/
+    body{height:auto;}
+    header{height:90px;}
+    #logo{width: 60px;}
+    #lang{font-size: 24px;line-height: 90px;}
+    .lang_sub{top:82px;}
+    #main{height:165vw;}
+    #main_slide>li:nth-child(1){background:#003929}
+    #main_slide>li:nth-child(2){background:#ffdc00}
+    #main_slide>li:nth-child(3){background:#ffdc00}
+    #main_slide>li:nth-child(4){background:url(../images/kv-be_bg-m.jpg)center no-repeat;background-size:cover;}
+    #main_slide>li:nth-child(5){background:#e6629b url(../images/kv-dynamite_bg-m.png)center no-repeat;}
+    .mobile_slide_img{display: block;}
+    footer{position:relative;height:auto;}
+    #footer_icon{float:none;text-align: center;}
+    #footer_icon>li{width:6%;height:5.5vw;margin-right:2%;float: none;display: inline-block;}
+    #footer_right{float: none;text-align: center;margin-right: 0;}
+    #footer_select_menu{position: relative;width:90%;}
+    #footer_right>p{width: 100%;float: none;}
+    #main_slide_bt{bottom:20px;}
+    #menu_icon2{margin-left:4%;width:15%;}
+    #menu_popup_leftbg>ul{width: 100%;}
+}
+@media all and (min-width:768px){/*768~ 태블릿*/
+    body{height: 100%;}
+    header{height: 90px;}
+    #logo{width: 55px;}
+    #lang{font-size: 14px;line-height:63px;}
+    .lang_sub{top: 55px;}
+    #main{height: 100%;}
+    #main_slide>li:nth-child(1){background:#003929 url(../images/kv-butter-holiday.png)center no-repeat;}
+    #main_slide>li:nth-child(2){background:#ffdc00 url(../images/kv-butter-2.png)center no-repeat;}
+    #main_slide>li:nth-child(3){background:#ffdc00 url(../images/kv-butter.png)center no-repeat;}
+    #main_slide>li:nth-child(4){background: url(../images/kv-be.png)center no-repeat,url(../images/kv-be-bg.jpg)center no-repeat;background-size:auto, cover;}
+    #main_slide>li:nth-child(5){background: url(../images/kv-dynamite_cover.png)center no-repeat,#e6629b url(../images/kv-dynamite_bg.png)center no-repeat;}
+    .mobile_slide_img{display: none;}
+    footer{position: fixed;height: 60px;}
+    #footer_icon{float: left;}
+    #footer_icon>li{width: 22px;height: 22px;margin-right: 5px;float: left;display: block;}
+    #footer_right{float: right;text-align: right;margin-right: 0;}
+    #footer_select_menu{position:absolute;width:30%;}
+    #footer_right>p{width:80%;float: right;}
+    #main_slide_bt{bottom: 70px;}
+    #menu_icon2{margin-left: 12px;width:67px;}
+    #menu_popup_leftbg>ul{width:370px;}
+}
+@media all and (min-width:1024px){/*1024 pc*/
+    body{height: 100%;}
+    header{height: 63px;}
+    #logo{width: 55px;}
+    #lang{font-size: 14px;line-height:63px;}
+    .lang_sub{top: 55px;}
+    #main{height: 100%;}
+    #main_slide>li:nth-child(1){background:#003929 url(../images/kv-butter-holiday.png)center no-repeat;}
+    #main_slide>li:nth-child(2){background:#ffdc00 url(../images/kv-butter-2.png)center no-repeat;}
+    #main_slide>li:nth-child(3){background:#ffdc00 url(../images/kv-butter.png)center no-repeat;}
+    #main_slide>li:nth-child(4){background: url(../images/kv-be.png)center no-repeat,url(../images/kv-be-bg.jpg)center no-repeat;background-size:auto, cover;}
+    #main_slide>li:nth-child(5){background: url(../images/kv-dynamite_cover.png)center no-repeat,#e6629b url(../images/kv-dynamite_bg.png)center no-repeat;}
+    .mobile_slide_img{display: none;}
+    footer{position: fixed;height: 60px;}
+    #footer_icon{float: left;}
+    #footer_icon>li{width: 30px;height: 30px;margin-right: 10px;float: left;display: block;}
+    #footer_right{float: right;text-align: right;margin-right: 30px;}
+    #footer_select_menu{position:absolute;width: 350px;}
+    #footer_right>p{width:100%;float: right;}
+    #main_slide_bt{bottom: 70px;}
+    #menu_icon2{margin-left: 12px;width:67px;}
+    #menu_popup_leftbg>ul{width: 370px;}
+    
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 모바일은 화면크기를 자동으로 줄여서 표현하는 방식. 1:1사이즈의 대응을 위하여 viewport코드를 추갛ㄴ다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script>
+        $(document).ready(function(){
+            $('#main_slide_bt>li').click(function(){
+                $(this).css({'opacity':'1'}).siblings().css({'opacity':'0.5'})
+                $('#main_slide').animate({'left':$(this).index()*-100+'%'})
+            })
+            $('#menu_icon1').click(function(){
+                $(this).hide();
+                $('#menu_popup').show()
+                $('body').css({'overflow':'hidden'})
+            })
+            $('#menu_icon2').click(function(){
+                $('#menu_popup').hide();
+                $('#menu_icon1').show()
+                $('body').css({'overflow':'auto'})
+
+            })
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/btn-open-m.png" alt="" id="menu_icon1">
+
+        <img src="images/logo-m.png" alt="" id="logo">
+        <h3 id="lang">KOR
+            <ul class="lang_sub">
+                <li>KOR</li>
+                <li>ENG</li>
+                <li>JPN</li>
+                <li>CHN</li>
+            </ul>
+        </h3>
+    </header>
+    <!--  -->
+    <div id="main">
+        <ul id="main_slide">
+            <li>
+                <div class="mobile_slide_img">
+                    <img src="images/kv-butter-holiday-m.jpg" alt="">
+                    <h2>BUTTER<br>(Holiday Remix)</h2>
+                </div>
+            </li>
+            <li>
+                <div class="mobile_slide_img">
+                    <img src="images/kv-butter-2-m.jpg" alt="">
+                    <h2>BUTTER</h2>
+                </div>
+            </li>
+            <li>
+                <div class="mobile_slide_img">
+                    <img src="images/kv-butter-m.jpg" alt="">
+                    <h2>BUTTER</h2>
+                </div>
+            </li>
+            <li>
+                <div class="mobile_slide_img">
+                    <img src="images/kv-be-m.jpg" alt="">
+                    <h2>BE</h2>
+                </div>
+            </li>
+            <li>
+                <div class="mobile_slide_img">
+                    <img src="images/kv-dynamite_cover-m.jpg" alt="">
+                    <h2></h2>
+                </div>
+            </li>
+        </ul>
+        <ul id="main_slide_bt">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!--  -->
+    <footer>
+        <ul id="footer_icon">
+            <li><img src="images/footer_icon2/twitter-star_w.png" alt=""></li>
+            <li><img src="images/footer_icon2/twitter_w.png" alt=""></li>
+            <li><img src="images/footer_icon2/weibo-member_w.png" alt=""></li>
+            <li><img src="images/footer_icon2/weibo_w.png" alt=""></li>
+            <li><img src="images/footer_icon2/weverse_w.png" alt=""></li>
+            <li><img src="images/footer_icon2/youku_w.png" alt=""></li>
+            <li><img src="images/footer_icon2/youtube_w.png" alt=""></li>
+        </ul>
+        <div id="footer_select_menu">
+            FAMILY SITES
+            <ul class="footer_select_menu_sub">
+                <li>HYBE CO., LTD.</li>
+                <li>BIG HIT AUDITION</li>
+                <li>WEVERSE SHOP</li>
+                <li>WEVERSE</li>
+                <li>TOMORROW X TOGETHER OFFICIAL WEBSITE</li>
+                <li>LEE HYUN OFFICIAL WEBSITE</li>
+            </ul>
+        </div>
+        <div id="footer_right">
+            <h6>관련사이트</h6>
+            <p>COPYRIGHT © 2021 BIG HIT MUSIC / HYBE. ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+    <!--  -->
+    <div id="menu_popup">
+        <div id="menu_popup_leftbg">
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>BTS</li>
+                <li>TOMORROW X TOGETHER</li>
+                <li>LEE HYUN</li>
+            </ul>
+        </div>
+        <div id="menu_popup_rightbg">
+            <ul>
+                <li>HOME</li>
+                <li><a href="https://sungkyoung2.github.io/bts2/">PROFILE</a></li>
+                <li>DISCOGRAPHY</li>
+                <li>SCHEDULE</li>
+                <li>TOUR</li>
+            </ul>
+        </div>
+        <img src="images/btn-close-m.png" alt="" id="menu_icon2">
+    </div>
+</body>
+</html>
